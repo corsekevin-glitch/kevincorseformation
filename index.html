@@ -179,7 +179,11 @@ textarea{min-height:150px;resize:vertical}
    <p>Décrivez votre établissement et la prestation recherchée. Le formulaire est prêt à être relié à votre adresse e-mail.</p>
    <div class="checks"><div class="check"><b>✓</b><span>Formation incendie / évacuation</span></div><div class="check"><b>✓</b><span>SST</span></div><div class="check"><b>✓</b><span>DUERP / prévention</span></div><div class="check"><b>✓</b><span>Commission de sécurité</span></div></div>
   </div>
-  <form class="form" data-demo>
+  <form class="form" action="https://formsubmit.co/corse.kevin@outlook.fr" method="POST">
+   <input type="hidden" name="_subject" value="Nouvelle demande de devis — Kevin CORSE Formation">
+   <input type="hidden" name="_template" value="table">
+   <input type="hidden" name="_captcha" value="true">
+   <input type="hidden" name="_url" value="https://corsekevin-glitch.github.io/kevincorseformation/">
    <label for="nom">Nom / prénom *</label><input id="nom" name="nom" required>
    <label for="entreprise">Entreprise *</label><input id="entreprise" name="entreprise" required>
    <label for="email">Email *</label><input id="email" name="email" type="email" required>
@@ -188,7 +192,7 @@ textarea{min-height:150px;resize:vertical}
    <label for="prestation">Prestation souhaitée *</label><select id="prestation" name="prestation" required><option value="">Choisir…</option><option>Formation incendie</option><option>Évacuation</option><option>SST</option><option>DUERP</option><option>Prévention des risques</option><option>Commission de sécurité</option><option>Autre</option></select>
    <label for="message">Votre besoin</label><textarea id="message" name="message" placeholder="Nombre de personnes, type d'établissement, besoin particulier…"></textarea>
    <button class="btn btn-red" type="submit">Envoyer ma demande</button>
-   <p class="small">* Champs obligatoires.</p><p class="form-message" style="display:none;margin:12px 0 0;font-weight:800;color:#16803c"></p>
+   <p class="small">* Champs obligatoires.</p>
   </form>
  </div>
 </section>
