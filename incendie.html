@@ -1,1222 +1,1359 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Formation incendie | Kevin Corse Formation</title>
-
-<meta name="description"
-content="Formation incendie en entreprise : prévention, visite de l'établissement, manipulation des extincteurs sur feu réel, permis feu et sensibilisation. Programme adapté à votre activité.">
-
-<style>
-
-:root{
-    --red:#e21b2d;
-    --red-dark:#a90f1d;
-    --black:#090a0c;
-    --dark:#121417;
-    --grey:#666;
-    --light:#f5f5f6;
-    --white:#ffffff;
-}
-
-*{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:Inter,Arial,Helvetica,sans-serif;
-    background:#fff;
-    color:#15161a;
-    line-height:1.6;
-}
-
-a{
-    color:inherit;
-    text-decoration:none;
-}
-
-.container{
-    width:min(1180px,92%);
-    margin:auto;
-}
-
-
-/* =========================
-   HEADER
-========================= */
-
-header{
-    position:sticky;
-    top:0;
-    z-index:100;
-    background:rgba(255,255,255,.96);
-    backdrop-filter:blur(12px);
-    border-bottom:1px solid #e8e8e8;
-}
-
-.nav{
-    min-height:88px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:25px;
-}
-
-.logo-text{
-    font-weight:950;
-    font-size:20px;
-    letter-spacing:-.03em;
-}
-
-.logo-text span{
-    color:var(--red);
-}
-
-.nav-links{
-    display:flex;
-    align-items:center;
-    gap:5px;
-}
-
-.nav-links a{
-    padding:13px 17px;
-    border-radius:10px;
-    font-weight:800;
-    transition:.2s;
-}
-
-.nav-links a:hover{
-    background:#f4f4f4;
-}
-
-.nav-links .contact{
-    background:var(--red);
-    color:white;
-}
-
-
-/* =========================
-   HERO
-========================= */
-
-.hero{
-    background:
-        linear-gradient(115deg,rgba(0,0,0,.90),rgba(0,0,0,.58)),
-        url("https://messana.com.au/_astro/fire-extinguisher-training.B0Y33wVF_ZkrwNq.webp")
-        center/cover;
-
-    color:white;
-    min-height:570px;
-    display:flex;
-    align-items:center;
-}
-
-.hero-content{
-    max-width:820px;
-    padding:90px 0;
-}
-
-.badge{
-    display:inline-block;
-    background:var(--red);
-    padding:9px 16px;
-    border-radius:30px;
-    font-size:14px;
-    font-weight:900;
-    text-transform:uppercase;
-    letter-spacing:.05em;
-    margin-bottom:25px;
-}
-
-.hero h1{
-    font-size:clamp(42px,7vw,78px);
-    line-height:1;
-    letter-spacing:-.05em;
-    margin-bottom:25px;
-}
-
-.hero h1 span{
-    color:#ff3348;
-}
-
-.hero p{
-    font-size:21px;
-    max-width:720px;
-    color:#eee;
-}
-
-.hero-buttons{
-    display:flex;
-    flex-wrap:wrap;
-    gap:15px;
-    margin-top:35px;
-}
-
-.btn{
-    display:inline-flex;
-    padding:15px 23px;
-    border-radius:10px;
-    font-weight:900;
-    transition:.2s;
-}
-
-.btn-red{
-    background:var(--red);
-    color:white;
-}
-
-.btn-red:hover{
-    background:var(--red-dark);
-    transform:translateY(-2px);
-}
-
-.btn-white{
-    background:white;
-    color:#111;
-}
-
-.btn-white:hover{
-    transform:translateY(-2px);
-}
-
-
-/* =========================
-   INTRO
-========================= */
-
-.intro{
-    padding:85px 0 55px;
-}
-
-.intro-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:60px;
-    align-items:center;
-}
-
-.kicker{
-    color:var(--red);
-    font-weight:950;
-    text-transform:uppercase;
-    letter-spacing:.08em;
-    font-size:14px;
-}
-
-h2{
-    font-size:clamp(34px,5vw,55px);
-    line-height:1.05;
-    letter-spacing:-.04em;
-    margin:12px 0 20px;
-}
-
-.intro p{
-    color:#555;
-    font-size:18px;
-}
-
-.highlight{
-    border-left:5px solid var(--red);
-    background:#f7f7f7;
-    padding:25px;
-    border-radius:0 15px 15px 0;
-    margin-top:25px;
-    font-weight:800;
-}
-
-.intro-image{
-    width:100%;
-    height:430px;
-    object-fit:cover;
-    border-radius:24px;
-    box-shadow:0 20px 50px rgba(0,0,0,.15);
-}
-
-
-/* =========================
-   PROGRAMME
-========================= */
-
-.programme{
-    background:var(--light);
-    padding:90px 0;
-}
-
-.section-head{
-    max-width:780px;
-    margin-bottom:45px;
-}
-
-.section-head p{
-    color:#666;
-    font-size:18px;
-}
-
-.programme-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:25px;
-}
-
-.card{
-    background:white;
-    border-radius:20px;
-    padding:32px;
-    box-shadow:0 12px 35px rgba(0,0,0,.07);
-    border:1px solid #e9e9e9;
-}
-
-.card-number{
-    width:42px;
-    height:42px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background:var(--red);
-    color:white;
-    border-radius:50%;
-    font-weight:950;
-    margin-bottom:20px;
-}
-
-.card h3{
-    font-size:25px;
-    margin-bottom:10px;
-}
-
-.card p{
-    color:#666;
-}
-
-
-/* =========================
-   DUREE
-========================= */
-
-.duration{
-    padding:90px 0;
-}
-
-.duration-box{
-    background:var(--black);
-    color:white;
-    border-radius:25px;
-    padding:45px;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:30px;
-    align-items:center;
-}
-
-.duration-box h2{
-    margin:0;
-}
-
-.duration-list{
-    display:grid;
-    gap:15px;
-}
-
-.duration-item{
-    display:flex;
-    align-items:center;
-    gap:15px;
-    padding:18px;
-    background:#17191c;
-    border-radius:14px;
-}
-
-.duration-icon{
-    font-size:28px;
-}
-
-.duration-item strong{
-    color:white;
-}
-
-.duration-item span{
-    display:block;
-    color:#aaa;
-}
-
-
-/* =========================
-   PUBLIC
-========================= */
-
-.public{
-    padding:90px 0;
-    background:#fff;
-}
-
-.public-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:25px;
-}
-
-.public-card{
-    position:relative;
-    min-height:310px;
-    border-radius:22px;
-    overflow:hidden;
-    color:white;
-    display:flex;
-    align-items:flex-end;
-}
-
-.public-card img{
-    position:absolute;
-    inset:0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-}
-
-.public-card::after{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:linear-gradient(transparent 25%,rgba(0,0,0,.88));
-}
-
-.public-content{
-    position:relative;
-    z-index:2;
-    padding:30px;
-}
-
-.public-content h3{
-    font-size:28px;
-    margin-bottom:8px;
-}
-
-.public-content p{
-    color:#ddd;
-}
-
-
-/* =========================
-   ADAPTATION
-========================= */
-
-.adaptation{
-    background:#111;
-    color:white;
-    padding:95px 0;
-}
-
-.adaptation-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:60px;
-    align-items:center;
-}
-
-.adaptation h2{
-    margin-bottom:25px;
-}
-
-.adaptation p{
-    color:#bbb;
-    font-size:18px;
-}
-
-.types{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:14px;
-    margin-top:30px;
-}
-
-.type{
-    background:#1c1e21;
-    border:1px solid #303238;
-    padding:18px;
-    border-radius:14px;
-    font-weight:900;
-}
-
-.type span{
-    color:var(--red);
-    margin-right:8px;
-}
-
-
-/* =========================
-   PERMIS FEU
-========================= */
-
-.permis{
-    padding:90px 0;
-}
-
-.permis-box{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:45px;
-    align-items:center;
-}
-
-.permis-image{
-    width:100%;
-    height:420px;
-    object-fit:cover;
-    border-radius:24px;
-}
-
-.permis-list{
-    display:grid;
-    gap:14px;
-    margin-top:25px;
-}
-
-.permis-list div{
-    padding:17px 20px;
-    border-radius:12px;
-    background:#f6f6f6;
-    border-left:4px solid var(--red);
-    font-weight:750;
-}
-
-
-/* =========================
-   CTA
-========================= */
-
-.cta{
-    background:
-        linear-gradient(120deg,rgba(226,27,45,.94),rgba(130,10,23,.94));
-    color:white;
-    padding:80px 0;
-    text-align:center;
-}
-
-.cta h2{
-    margin-bottom:18px;
-}
-
-.cta p{
-    max-width:720px;
-    margin:auto;
-    font-size:19px;
-    color:#fff;
-}
-
-.cta .btn{
-    margin-top:30px;
-}
-
-
-/* =========================
-   FOOTER
-========================= */
-
-footer{
-    background:#08090b;
-    color:#aaa;
-    padding:45px 0;
-}
-
-.footer-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr;
-    gap:30px;
-}
-
-footer h3{
-    color:white;
-    margin-bottom:12px;
-}
-
-footer a{
-    color:#ddd;
-}
-
-.footer-bottom{
-    border-top:1px solid #25272a;
-    margin-top:30px;
-    padding-top:25px;
-    text-align:center;
-    font-size:14px;
-}
-
-
-/* =========================
-   MOBILE
-========================= */
-
-@media(max-width:850px){
-
-    .nav{
-        min-height:75px;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Formation incendie en entreprise - prévention, manipulation des extincteurs, feu réel, permis feu et sensibilisation. Formation adaptée aux établissements médico-sociaux, EHPAD, hôtellerie et entreprises.">
+  <meta name="google-site-verification" content="">
+
+  <title>Formation Incendie | Kevin Corse Formation</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --red: #e51b23;
+      --red-dark: #a90910;
+      --black: #08090b;
+      --dark: #111318;
+      --grey: #5f6368;
+      --light: #f5f5f5;
+      --white: #ffffff;
+      --border: #e4e4e4;
+      --shadow: 0 15px 40px rgba(0,0,0,.10);
     }
 
-    .nav-links{
-        display:none;
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
-    .hero{
-        min-height:620px;
+    html {
+      scroll-behavior: smooth;
     }
 
-    .intro-grid,
-    .programme-grid,
-    .duration-box,
-    .public-grid,
-    .adaptation-grid,
-    .permis-box{
-        grid-template-columns:1fr;
+    body {
+      font-family: "Inter", Arial, sans-serif;
+      color: #15171c;
+      background: #fff;
+      line-height: 1.6;
     }
 
-    .intro-image,
-    .permis-image{
-        height:320px;
+    a {
+      text-decoration: none;
+      color: inherit;
     }
 
-    .footer-grid{
-        grid-template-columns:1fr;
+    img {
+      max-width: 100%;
+      display: block;
     }
 
-}
+    .container {
+      width: min(1180px, calc(100% - 40px));
+      margin: auto;
+    }
 
-</style>
+    /* =========================
+       BARRE DE NAVIGATION
+    ========================= */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(8,9,11,.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,.10);
+      box-shadow: 0 8px 30px rgba(0,0,0,.20);
+    }
+
+    .nav {
+      min-height: 92px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .logo {
+      width: 190px;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .navlinks {
+      display: flex;
+      align-items: center;
+      gap: 0;
+    }
+
+    .navlinks a {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 800;
+      padding: 13px 19px;
+      border-right: 1px solid rgba(255,255,255,.25);
+      transition: .25s;
+    }
+
+    .navlinks a:first-child {
+      border-left: 1px solid rgba(255,255,255,.25);
+    }
+
+    .navlinks a:hover {
+      background: var(--red);
+    }
+
+    .navlinks .contact {
+      background: var(--red);
+      border-radius: 7px;
+      border: none;
+      margin-left: 10px;
+      padding: 14px 22px;
+    }
+
+    .navlinks .contact:hover {
+      background: #ff2932;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      min-height: 610px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg,
+          rgba(0,0,0,.92) 0%,
+          rgba(0,0,0,.78) 42%,
+          rgba(0,0,0,.25) 100%),
+        url("https://images.unsplash.com/photo-1582724015710-7f4d7d3f6f8c?auto=format&fit=crop&w=1800&q=85")
+        center/cover no-repeat;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 8px;
+      background: var(--red);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 760px;
+      color: #fff;
+      padding: 85px 0;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: #fff;
+      background: var(--red);
+      font-weight: 900;
+      letter-spacing: .08em;
+      font-size: 13px;
+      padding: 8px 14px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(48px, 7vw, 82px);
+      line-height: .95;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: -.04em;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 span {
+      color: var(--red);
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 680px;
+      color: #eee;
+      margin-bottom: 35px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 25px;
+      border-radius: 7px;
+      font-weight: 800;
+      transition: .25s;
+    }
+
+    .btn-red {
+      background: var(--red);
+      color: #fff;
+    }
+
+    .btn-red:hover {
+      background: #ff2932;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border: 2px solid #fff;
+      color: #fff;
+    }
+
+    .btn-outline:hover {
+      background: #fff;
+      color: #111;
+    }
+
+    /* =========================
+       INTRO
+    ========================= */
+
+    section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 45px;
+    }
+
+    .section-title .small {
+      color: var(--red);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-size: 13px;
+    }
+
+    .section-title h2 {
+      font-size: clamp(32px, 4vw, 50px);
+      line-height: 1.1;
+      margin: 8px 0 15px;
+      letter-spacing: -.03em;
+    }
+
+    .section-title p {
+      color: var(--grey);
+      font-size: 18px;
+    }
+
+    /* =========================
+       PROGRAMME
+    ========================= */
+
+    .programme {
+      background: #f5f5f5;
+    }
+
+    .programme-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .programme-card {
+      background: #fff;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      transition: .25s;
+    }
+
+    .programme-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .programme-image {
+      height: 230px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .programme-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: .4s;
+    }
+
+    .programme-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .number {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--red);
+      color: #fff;
+      font-weight: 900;
+      font-size: 18px;
+    }
+
+    .programme-content {
+      padding: 25px;
+    }
+
+    .programme-content h3 {
+      color: var(--red);
+      font-size: 21px;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+
+    .programme-content ul {
+      list-style: none;
+      margin-bottom: 20px;
+    }
+
+    .programme-content li {
+      margin-bottom: 8px;
+      position: relative;
+      padding-left: 25px;
+    }
+
+    .programme-content li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--red);
+      font-weight: 900;
+    }
+
+    .duration {
+      border-top: 1px solid var(--border);
+      padding-top: 15px;
+      font-weight: 800;
+    }
+
+    .duration span {
+      color: var(--red);
+    }
+
+    /* =========================
+       INFOS
+    ========================= */
+
+    .info-bar {
+      background: var(--dark);
+      color: #fff;
+      border-radius: 14px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 25px;
+      overflow: hidden;
+    }
+
+    .info-item {
+      padding: 30px;
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      border-right: 1px solid rgba(255,255,255,.15);
+    }
+
+    .info-item:last-child {
+      border-right: none;
+    }
+
+    .icon {
+      width: 55px;
+      height: 55px;
+      border: 2px solid var(--red);
+      color: var(--red);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+      flex-shrink: 0;
+    }
+
+    .info-item strong {
+      display: block;
+      font-size: 23px;
+      color: var(--red);
+    }
+
+    .info-item small {
+      color: #ddd;
+    }
+
+    /* =========================
+       ADAPTATION ENTREPRISE
+    ========================= */
+
+    .adaptation-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .adaptation-image {
+      height: 480px;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .adaptation-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .adaptation-text h2 {
+      font-size: 42px;
+      line-height: 1.1;
+      margin-bottom: 18px;
+    }
+
+    .adaptation-text h2 span {
+      color: var(--red);
+    }
+
+    .adaptation-text > p {
+      color: var(--grey);
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .types {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin: 25px 0;
+    }
+
+    .type {
+      border: 1px solid #ddd;
+      border-radius: 9px;
+      padding: 18px 8px;
+      text-align: center;
+      font-weight: 900;
+      transition: .25s;
+    }
+
+    .type:hover {
+      border-color: var(--red);
+      color: var(--red);
+      transform: translateY(-3px);
+    }
+
+    .type-icon {
+      font-size: 28px;
+      margin-bottom: 6px;
+    }
+
+    .establishments {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 25px;
+      margin-top: 20px;
+    }
+
+    .establishments div {
+      font-weight: 600;
+    }
+
+    .establishments div::before {
+      content: "✓";
+      color: var(--red);
+      font-weight: 900;
+      margin-right: 8px;
+    }
+
+    /* =========================
+       PERMIS FEU
+    ========================= */
+
+    .permit {
+      background: #090a0c;
+      color: #fff;
+    }
+
+    .permit-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .permit-image {
+      height: 430px;
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    .permit-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .permit h2 {
+      font-size: 44px;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .permit h2 span {
+      color: var(--red);
+    }
+
+    .permit p {
+      color: #d1d1d1;
+      font-size: 18px;
+      margin-bottom: 22px;
+    }
+
+    .permit-list {
+      list-style: none;
+    }
+
+    .permit-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255,255,255,.12);
+    }
+
+    .permit-list li::before {
+      content: "✓";
+      color: var(--red);
+      font-weight: 900;
+      margin-right: 12px;
+    }
+
+    /* =========================
+       POUR QUI
+    ========================= */
+
+    .audience {
+      background: #f5f5f5;
+    }
+
+    .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .audience-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px 20px;
+      text-align: center;
+      box-shadow: 0 8px 25px rgba(0,0,0,.05);
+    }
+
+    .audience-card .big-icon {
+      font-size: 38px;
+      margin-bottom: 12px;
+    }
+
+    .audience-card h3 {
+      font-size: 17px;
+      margin-bottom: 7px;
+    }
+
+    .audience-card p {
+      color: var(--grey);
+      font-size: 14px;
+    }
+
+    /* =========================
+       CTA
+    ========================= */
+
+    .cta {
+      background: linear-gradient(120deg, #a90910, #e51b23);
+      color: #fff;
+    }
+
+    .cta-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .cta h2 {
+      font-size: 38px;
+      line-height: 1.1;
+      margin-bottom: 10px;
+    }
+
+    .cta p {
+      font-size: 17px;
+      color: #ffeaea;
+    }
+
+    .cta-contact {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .cta-contact a {
+      background: rgba(0,0,0,.25);
+      border: 1px solid rgba(255,255,255,.45);
+      padding: 14px 20px;
+      border-radius: 8px;
+      font-weight: 700;
+    }
+
+    .cta-contact a:hover {
+      background: #fff;
+      color: var(--red);
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      background: #08090b;
+      color: #aaa;
+      padding: 35px 0;
+    }
+
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    footer strong {
+      color: #fff;
+    }
+
+    footer a {
+      color: #ddd;
+    }
+
+    footer a:hover {
+      color: var(--red);
+    }
+
+    .linkedin {
+      color: #fff;
+      font-weight: 700;
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 25px;
+      color: var(--red);
+      font-weight: 800;
+    }
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 900px) {
+
+      .nav {
+        min-height: auto;
+        padding: 15px 0;
+        flex-direction: column;
+      }
+
+      .logo {
+        width: 220px;
+      }
+
+      .navlinks {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .navlinks a {
+        font-size: 12px;
+        padding: 10px 12px;
+      }
+
+      .hero {
+        min-height: 600px;
+      }
+
+      .programme-grid,
+      .audience-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .adaptation-grid,
+      .permit-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .info-bar {
+        grid-template-columns: 1fr;
+      }
+
+      .info-item {
+        border-right: none;
+        border-bottom: 1px solid rgba(255,255,255,.15);
+      }
+
+      .info-item:last-child {
+        border-bottom: none;
+      }
+
+      .cta-box {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      .container {
+        width: min(100% - 28px, 1180px);
+      }
+
+      section {
+        padding: 55px 0;
+      }
+
+      .navlinks a {
+        padding: 9px 7px;
+        font-size: 10px;
+      }
+
+      .navlinks .contact {
+        padding: 10px 12px;
+      }
+
+      .hero-content {
+        padding: 65px 0;
+      }
+
+      .hero h1 {
+        font-size: 50px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      .programme-grid,
+      .audience-grid,
+      .types {
+        grid-template-columns: 1fr;
+      }
+
+      .adaptation-image,
+      .permit-image {
+        height: 300px;
+      }
+
+      .adaptation-text h2,
+      .permit h2 {
+        font-size: 34px;
+      }
+
+      .establishments {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
 </head>
-
 
 <body>
 
+  <!-- =========================
+       NAVIGATION
+  ========================= -->
 
-<!-- =========================
-     HEADER
-========================= -->
+  <header>
+    <div class="container nav">
 
-<header>
+      <a href="index.html">
+        <img src="logo.png" alt="Kevin Corse Formation" class="logo">
+      </a>
 
-<div class="container nav">
+      <nav class="navlinks">
+        <a href="index.html">ACCUEIL</a>
+        <a href="prestations.html">PRESTATIONS</a>
+        <a href="index.html#tarifs">TARIFS</a>
+        <a href="index.html#apropos">À PROPOS</a>
+        <a href="index.html#devis">DEVIS</a>
+        <a href="index.html#contact" class="contact">CONTACT</a>
+      </nav>
 
-<a href="index.html" class="logo-text">
-KEVIN <span>CORSE</span> FORMATION
-</a>
+    </div>
+  </header>
 
-<nav class="nav-links">
 
-<a href="index.html">Accueil</a>
-<a href="prestations.html">Prestations</a>
-<a href="index.html#tarifs">Tarifs</a>
-<a href="index.html#apropos">À propos</a>
-<a href="index.html#devis">Devis</a>
-<a href="index.html#contact" class="contact">Contact</a>
+  <!-- =========================
+       HERO
+  ========================= -->
 
-</nav>
+  <section class="hero">
 
-</div>
+    <div class="container">
 
-</header>
+      <div class="hero-content">
 
+        <div class="eyebrow">
+          KEVIN CORSE FORMATION
+        </div>
 
-<!-- =========================
-     HERO
-========================= -->
+        <h1>
+          Formation<br>
+          <span>Incendie</span>
+        </h1>
 
-<section class="hero">
+        <p>
+          Prévenir les risques, comprendre les situations dangereuses
+          et savoir agir efficacement face à un départ de feu.
+        </p>
 
-<div class="container hero-content">
+        <div class="hero-buttons">
 
-<div class="badge">
-Formation incendie
-</div>
+          <a href="index.html#devis" class="btn btn-red">
+            Demander un devis
+          </a>
 
-<h1>
-Prévenir.<br>
-<span>Comprendre.</span><br>
-Agir.
-</h1>
+          <a href="#programme" class="btn btn-outline">
+            Découvrir la formation
+          </a>
 
-<p>
-Une formation incendie pensée pour votre établissement,
-votre activité et vos risques réels.
-</p>
+        </div>
 
-<div class="hero-buttons">
+      </div>
 
-<a href="#programme" class="btn btn-red">
-Découvrir le programme
-</a>
+    </div>
 
-<a href="#contact" class="btn btn-white">
-Demander un devis
-</a>
+  </section>
 
-</div>
 
-</div>
+  <!-- =========================
+       PROGRAMME
+  ========================= -->
 
-</section>
+  <section class="programme" id="programme">
 
+    <div class="container">
 
-<!-- =========================
-     INTRO
-========================= -->
+      <div class="section-title">
 
-<section class="intro">
+        <div class="small">
+          Formation incendie
+        </div>
 
-<div class="container intro-grid">
+        <h2>
+          Une formation centrée sur la prévention
+        </h2>
 
-<div>
+        <p>
+          Avant d'apprendre à utiliser un extincteur, il est essentiel
+          de comprendre les risques présents dans son environnement de travail.
+        </p>
 
-<div class="kicker">
-Prévention incendie
-</div>
+      </div>
 
-<h2>
-Former avant tout à la prévention.
-</h2>
 
-<p>
-La formation commence par une approche concrète des risques
-présents dans votre établissement.
-</p>
+      <div class="programme-grid">
 
-<p style="margin-top:15px;">
-Une partie théorique permet d'aborder les principes de prévention,
-les consignes de sécurité et les risques propres à l'activité.
-Une visite de l'établissement permet ensuite de mettre ces notions
-en relation avec les réalités du terrain.
-</p>
+        <!-- PREVENTION -->
 
-<div class="highlight">
-La formation est adaptée aux locaux, aux risques identifiés
-et au fonctionnement réel de votre établissement.
-</div>
+        <article class="programme-card">
 
-</div>
+          <div class="programme-image">
 
-<img
-class="intro-image"
-src="https://messana.com.au/_astro/fire-extinguisher-training.B0Y33wVF_ZkrwNq.webp"
-alt="Formation incendie et manipulation d'un extincteur">
+            <img
+              src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1000&q=85"
+              alt="Formation théorique en entreprise"
+            >
 
-</div>
+            <div class="number">01</div>
 
-</section>
+          </div>
 
+          <div class="programme-content">
 
-<!-- =========================
-     PROGRAMME
-========================= -->
+            <h3>Prévention</h3>
 
-<section class="programme" id="programme">
+            <ul>
+              <li>Prévention des risques incendie</li>
+              <li>Cours théorique</li>
+              <li>Visite de l'établissement</li>
+              <li>Identification des risques liés à l'activité</li>
+              <li>Présentation des consignes de sécurité</li>
+            </ul>
 
-<div class="container">
+            <div class="duration">
+              Durée : <span>1 h 30</span>
+            </div>
 
-<div class="section-head">
+          </div>
 
-<div class="kicker">
-Le programme
-</div>
+        </article>
 
-<h2>
-Une formation en deux temps.
-</h2>
 
-<p>
-L'objectif est de permettre aux participants de comprendre
-le risque incendie avant de passer à la pratique.
-</p>
+        <!-- PRATIQUE -->
 
-</div>
+        <article class="programme-card">
 
+          <div class="programme-image">
 
-<div class="programme-grid">
+            <img
+              src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1000&q=85"
+              alt="Manipulation d'un extincteur"
+            >
 
+            <div class="number">02</div>
 
-<div class="card">
+          </div>
 
-<div class="card-number">01</div>
+          <div class="programme-content">
 
-<h3>
-Prévention & théorie
-</h3>
+            <h3>Pratique</h3>
 
-<p>
-<strong>1 h 30</strong> consacrée à la prévention du risque incendie,
-aux consignes de sécurité et à une visite de l'établissement.
-</p>
+            <ul>
+              <li>Présentation des extincteurs</li>
+              <li>Choix du moyen d'extinction</li>
+              <li>Manipulation des extincteurs</li>
+              <li>Exercices pratiques</li>
+              <li>Manipulation sur feu réel</li>
+            </ul>
 
-<p style="margin-top:15px;">
-Identification des risques liés à l'activité, observation des locaux,
-des cheminements, des équipements et des situations pouvant favoriser
-un départ ou une propagation du feu.
-</p>
+            <div class="duration">
+              Durée : <span>1 h 30</span>
+            </div>
 
-</div>
+          </div>
 
+        </article>
 
-<div class="card">
 
-<div class="card-number">02</div>
+        <!-- PERMIS FEU -->
 
-<h3>
-Mise en pratique
-</h3>
+        <article class="programme-card">
 
-<p>
-<strong>1 h 30</strong> de pratique avec manipulation des moyens
-d'extinction sur feu réel, dans un cadre pédagogique et sécurisé.
-</p>
+          <div class="programme-image">
 
-<p style="margin-top:15px;">
-Les participants peuvent ainsi mettre en application les connaissances
-abordées pendant la partie théorique.
-</p>
+            <img
+              src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1000&q=85"
+              alt="Document de prévention et sécurité"
+            >
 
-</div>
+            <div class="number">03</div>
 
+          </div>
 
-<div class="card">
+          <div class="programme-content">
 
-<div class="card-number">03</div>
+            <h3>Permis feu</h3>
 
-<h3>
-Sensibilisation
-</h3>
+            <ul>
+              <li>Présentation du permis feu</li>
+              <li>Élaboration d'un permis feu</li>
+              <li>Sensibilisation aux travaux par points chauds</li>
+              <li>Mesures de prévention</li>
+              <li>Consignes adaptées à l'entreprise</li>
+            </ul>
 
-<p>
-Reconnaître une situation à risque, adopter les bons réflexes,
-donner l'alerte et connaître les premières actions à réaliser
-face à un départ de feu.
-</p>
+            <div class="duration">
+              Durée : <span>30 min</span>
+            </div>
 
-</div>
+          </div>
 
+        </article>
 
-<div class="card">
+      </div>
 
-<div class="card-number">04</div>
 
-<h3>
-Programme sur mesure
-</h3>
+      <!-- INFOS -->
 
-<p>
-Le contenu peut être adapté aux caractéristiques de l'établissement,
-à son activité, à ses locaux et à son organisation.
-</p>
+      <div class="info-bar">
 
-</div>
+        <div class="info-item">
 
-</div>
+          <div class="icon">◷</div>
 
-</div>
+          <div>
+            <small>DURÉE TOTALE</small>
+            <strong>3 h 30</strong>
+            <small>1 h 30 théorie + visite<br>1 h 30 pratique + 30 min permis feu</small>
+          </div>
 
-</section>
+        </div>
 
 
-<!-- =========================
-     DUREE / EFFECTIF
-========================= -->
+        <div class="info-item">
 
-<section class="duration">
+          <div class="icon">♙</div>
 
-<div class="container">
+          <div>
+            <small>EFFECTIF</small>
+            <strong>10 à 12</strong>
+            <small>participants maximum<br>par session</small>
+          </div>
 
-<div class="duration-box">
+        </div>
 
-<div>
 
-<div class="kicker">
-Format de la formation
-</div>
+        <div class="info-item">
 
-<h2>
-Une formation courte, concrète et adaptée.
-</h2>
+          <div class="icon">✓</div>
 
-<p style="color:#aaa;margin-top:20px;">
-L'organisation peut être ajustée en fonction des besoins
-de l'entreprise et des caractéristiques de l'établissement.
-</p>
+          <div>
+            <small>FORMATION</small>
+            <strong>Sur mesure</strong>
+            <small>Programme adapté à<br>l'activité de l'entreprise</small>
+          </div>
 
-</div>
+        </div>
 
+      </div>
 
-<div class="duration-list">
+    </div>
 
-<div class="duration-item">
+  </section>
 
-<div class="duration-icon">⏱️</div>
 
-<div>
-<strong>3 h 30 de formation</strong>
-<span>1 h 30 théorie + 1 h 30 pratique, avec adaptation du déroulement.</span>
-</div>
+  <!-- =========================
+       ADAPTATION
+  ========================= -->
 
-</div>
+  <section>
 
+    <div class="container">
 
-<div class="duration-item">
+      <div class="adaptation-grid">
 
-<div class="duration-icon">👥</div>
+        <div class="adaptation-text">
 
-<div>
-<strong>10 à 12 participants</strong>
-<span>Un effectif permettant de favoriser les échanges et la pratique.</span>
-</div>
+          <div class="section-title" style="text-align:left;margin:0 0 25px;">
+            <div class="small">Votre établissement</div>
+          </div>
 
-</div>
+          <h2>
+            Une formation <span>adaptée</span> à votre activité
+          </h2>
 
+          <p>
+            Le programme n'est pas figé. Il est adapté aux caractéristiques
+            de votre établissement, à votre activité, à vos locaux et aux
+            risques identifiés lors de la visite.
+          </p>
 
-<div class="duration-item">
+          <div class="types">
 
-<div class="duration-icon">🔥</div>
+            <div class="type">
+              <div class="type-icon">🏥</div>
+              TYPE J
+            </div>
 
-<div>
-<strong>Pratique sur feu réel</strong>
-<span>Manipulation des extincteurs dans un cadre pédagogique sécurisé.</span>
-</div>
+            <div class="type">
+              <div class="type-icon">🏨</div>
+              TYPE O
+            </div>
 
-</div>
+            <div class="type">
+              <div class="type-icon">🏫</div>
+              TYPE R
+            </div>
 
-</div>
+            <div class="type">
+              <div class="type-icon">⚕️</div>
+              TYPE U
+            </div>
 
-</div>
+          </div>
 
-</div>
+          <div class="establishments">
 
-</section>
+            <div>Établissements médico-sociaux</div>
+            <div>EHPAD</div>
+            <div>Établissements de soins</div>
+            <div>Hôtellerie</div>
+            <div>Entreprises / PME</div>
+            <div>Autres activités professionnelles</div>
 
+          </div>
 
-<!-- =========================
-     PUBLIC
-========================= -->
+        </div>
 
-<section class="public">
 
-<div class="container">
+        <div class="adaptation-image">
 
-<div class="section-head">
+          <img
+            src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=85"
+            alt="Établissement de soins"
+          >
 
-<div class="kicker">
-Pour quels établissements ?
-</div>
+        </div>
 
-<h2>
-Une approche adaptée à votre secteur.
-</h2>
+      </div>
 
-<p>
-Les risques et les contraintes ne sont pas les mêmes selon
-le type d'établissement. Le programme est donc construit
-en fonction de votre environnement professionnel.
-</p>
+    </div>
 
-</div>
+  </section>
 
 
-<div class="public-grid">
+  <!-- =========================
+       PERMIS FEU
+  ========================= -->
 
+  <section class="permit">
 
-<div class="public-card">
+    <div class="container">
 
-<img
-src="https://cdn.job-medley.com/customers/image_files/converted_v1-f72b639f-586e-46e2-bf8d-f4f515223058.jpg"
-alt="Formation dans un établissement de soins">
+      <div class="permit-grid">
 
-<div class="public-content">
+        <div class="permit-image">
 
-<h3>
-Établissements de soins
-</h3>
+          <img
+            src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1200&q=85"
+            alt="Prévention des risques lors de travaux"
+          >
 
-<p>
-Prise en compte des contraintes liées aux patients,
-aux locaux et à l'organisation des secours.
-</p>
+        </div>
 
-</div>
 
-</div>
+        <div>
 
+          <div class="small" style="color:#e51b23;font-weight:900;text-transform:uppercase;letter-spacing:.12em;">
+            Prévention
+          </div>
 
-<div class="public-card">
+          <h2>
+            Permis feu & <span>sensibilisation</span>
+          </h2>
 
-<img
-src="https://www.hseadvisor.ca/images/optimized/services/training-development.webp"
-alt="Formation sécurité en entreprise">
+          <p>
+            La formation peut également intégrer la sensibilisation aux
+            travaux par points chauds et l'élaboration d'un permis feu
+            adapté aux besoins de l'entreprise.
+          </p>
 
-<div class="public-content">
+          <ul class="permit-list">
 
-<h3>
-Entreprises & PME
-</h3>
+            <li>
+              Identifier les situations à risque
+            </li>
 
-<p>
-Formation adaptée aux risques professionnels,
-aux locaux et à l'organisation interne.
-</p>
+            <li>
+              Comprendre les dangers liés aux travaux par points chauds
+            </li>
 
-</div>
+            <li>
+              Mettre en place les mesures de prévention adaptées
+            </li>
 
-</div>
+            <li>
+              Élaborer un permis feu avec l'entreprise
+            </li>
 
+            <li>
+              Sensibiliser les salariés aux consignes à respecter
+            </li>
 
-</div>
+          </ul>
 
-</div>
+        </div>
 
-</section>
+      </div>
 
+    </div>
 
-<!-- =========================
-     TYPES ERP
-========================= -->
+  </section>
 
-<section class="adaptation">
 
-<div class="container adaptation-grid">
+  <!-- =========================
+       POUR QUI
+  ========================= -->
 
-<div>
+  <section class="audience">
 
-<div class="kicker">
-Formation personnalisée
-</div>
+    <div class="container">
 
-<h2>
-Le programme s'adapte à votre établissement.
-</h2>
+      <div class="section-title">
 
-<p>
-Chaque établissement possède ses propres contraintes.
-L'objectif est donc de partir de votre activité et de vos locaux
-plutôt que d'appliquer un programme identique à toutes les entreprises.
-</p>
+        <div class="small">
+          Pour quels établissements ?
+        </div>
 
-<div class="types">
+        <h2>
+          Une formation pensée pour le terrain
+        </h2>
 
-<div class="type">
-<span>✓</span> Type J
-</div>
+        <p>
+          La formation peut être organisée directement au sein de votre
+          établissement afin de travailler sur des situations proches
+          de votre environnement professionnel.
+        </p>
 
-<div class="type">
-<span>✓</span> Type O
-</div>
+      </div>
 
-<div class="type">
-<span>✓</span> Type R
-</div>
 
-<div class="type">
-<span>✓</span> Type U
-</div>
+      <div class="audience-grid">
 
-</div>
+        <div class="audience-card">
+          <div class="big-icon">🏥</div>
+          <h3>EHPAD</h3>
+          <p>Prévention et sensibilisation adaptées aux établissements accueillant des personnes âgées.</p>
+        </div>
 
-</div>
+        <div class="audience-card">
+          <div class="big-icon">⚕️</div>
+          <h3>Établissements de soins</h3>
+          <p>Formation adaptée aux spécificités des établissements de santé et de soins.</p>
+        </div>
 
+        <div class="audience-card">
+          <div class="big-icon">🏨</div>
+          <h3>Hôtellerie</h3>
+          <p>Prévention incendie adaptée aux locaux, aux salariés et à l'accueil du public.</p>
+        </div>
 
-<div>
+        <div class="audience-card">
+          <div class="big-icon">🏢</div>
+          <h3>Entreprises / PME</h3>
+          <p>Formation adaptée aux risques et aux caractéristiques de votre activité.</p>
+        </div>
 
-<h3 style="font-size:28px;margin-bottom:20px;">
-Secteurs concernés
-</h3>
+      </div>
 
-<p>
-• Établissements médico-sociaux
-</p>
+    </div>
 
-<p>
-• Établissements de soins
-</p>
+  </section>
 
-<p>
-• EHPAD
-</p>
 
-<p>
-• Hôtellerie
-</p>
+  <!-- =========================
+       CTA
+  ========================= -->
 
-<p>
-• Entreprises et PME
-</p>
+  <section class="cta" id="devis">
 
-<p>
-• Autres établissements recevant du public
-</p>
+    <div class="container">
 
-</div>
+      <div class="cta-box">
 
-</div>
+        <div>
 
-</section>
+          <h2>
+            Besoin d'une formation incendie ?
+          </h2>
 
+          <p>
+            Contactez-moi pour construire une formation adaptée
+            aux besoins réels de votre entreprise.
+          </p>
 
-<!-- =========================
-     PERMIS FEU
-========================= -->
+        </div>
 
-<section class="permis">
 
-<div class="container permis-box">
+        <div class="cta-contact">
 
+          <a href="tel:0610232098">
+            ☎ 06 10 23 20 98
+          </a>
 
-<img
-class="permis-image"
-src="https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-4746/1759380845268_image_1759380845156.png"
-alt="Sensibilisation et manipulation des extincteurs">
+          <a href="mailto:corse.kevin@outlook.fr">
+            ✉ corse.kevin@outlook.fr
+          </a>
 
+        </div>
 
-<div>
+      </div>
 
-<div class="kicker">
-Permis feu
-</div>
+    </div>
 
-<h2>
-Prévenir les risques liés aux travaux.
-</h2>
+  </section>
 
-<p style="color:#666;font-size:18px;">
-Une sensibilisation peut également être intégrée à la démarche
-de prévention lors de travaux générant des sources d'inflammation.
-</p>
 
-<div class="permis-list">
+  <!-- =========================
+       FOOTER
+  ========================= -->
 
-<div>
-🔥 Sensibilisation au risque incendie
-</div>
+  <footer>
 
-<div>
-📋 Élaboration du permis feu
-</div>
+    <div class="container footer-grid">
 
-<div>
-⚠️ Identification des situations à risque
-</div>
+      <div>
+        <strong>KEVIN CORSE FORMATION</strong><br>
+        Formation • Prévention • Sécurité<br>
+        Bouches-du-Rhône • PACA
+      </div>
 
-<div>
-🏢 Adaptation aux travaux et aux locaux
-</div>
+      <div>
 
-</div>
+        <a
+          class="linkedin"
+          href="https://www.linkedin.com/in/k%C3%A9vin-corse-4644b9173/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
 
-</div>
+        <br>
 
-</div>
+        <a href="mailto:corse.kevin@outlook.fr">
+          corse.kevin@outlook.fr
+        </a>
 
-</section>
+        <br>
 
+        <a href="tel:0610232098">
+          06 10 23 20 98
+        </a>
 
-<!-- =========================
-     CTA
-========================= -->
+      </div>
 
-<section class="cta" id="contact">
+    </div>
 
-<div class="container">
+    <div class="container">
 
-<div class="kicker" style="color:white;">
-Formation sur mesure
-</div>
+      <a href="prestations.html" class="back">
+        ← Retour aux prestations
+      </a>
 
-<h2>
-Votre établissement a ses propres risques.
-</h2>
+    </div>
 
-<p>
-Échangeons sur votre activité, vos locaux et vos besoins
-afin de construire une formation adaptée.
-</p>
-
-<a
-href="mailto:corse.kevin@outlook.fr?subject=Demande de devis - Formation incendie"
-class="btn btn-white">
-Demander un devis
-</a>
-
-</div>
-
-</section>
-
-
-<!-- =========================
-     FOOTER
-========================= -->
-
-<footer>
-
-<div class="container">
-
-<div class="footer-grid">
-
-<div>
-
-<h3>
-Kevin Corse Formation
-</h3>
-
-<p>
-Formation • Prévention • Sécurité
-</p>
-
-</div>
-
-
-<div>
-
-<h3>
-Contact
-</h3>
-
-<p>
-06 10 23 20 98
-</p>
-
-<p>
-<a href="mailto:corse.kevin@outlook.fr">
-corse.kevin@outlook.fr
-</a>
-</p>
-
-</div>
-
-
-<div>
-
-<h3>
-Zone d'intervention
-</h3>
-
-<p>
-Bouches-du-Rhône • PACA
-</p>
-
-</div>
-
-</div>
-
-
-<div class="footer-bottom">
-
-© 2026 Kevin Corse Formation
-<br>
-<strong>Mieux se former pour mieux sauver.</strong>
-
-</div>
-
-</div>
-
-</footer>
+  </footer>
 
 
 </body>
