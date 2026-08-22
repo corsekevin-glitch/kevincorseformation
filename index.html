@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kevin Corse Formation | Formation • Prévention • Sécurité</title>
+<meta name="description" content="Kevin Corse Formation – formations incendie, évacuation, SST, DUERP et accompagnement en prévention et sécurité dans les Bouches-du-Rhône et la région PACA.">
+<style>
+:root{--red:#e21b17;--red2:#a90f0f;--black:#090a0c;--dark:#12161c;--ink:#151923;--muted:#68707b;--light:#f4f5f7;--white:#fff;--line:#e1e3e7}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+a{color:inherit}
+.container{width:min(1180px,92%);margin:auto}
+header{position:fixed;inset:0 0 auto 0;z-index:50;background:rgba(5,7,9,.88);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.12)}
+.nav{min-height:92px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:#fff;font-weight:900;letter-spacing:.2px}.logo{width:92px;height:92px;object-fit:contain;display:block}.brand span{font-size:14px;white-space:nowrap}
+.navlinks{display:flex;align-items:center;gap:5px}
+.navlinks a{color:#fff;text-decoration:none;font-weight:800;font-size:14px;padding:32px 16px}
+.navlinks a:hover{color:#ff4b47}
+.navlinks .contact{background:var(--red);border-radius:7px;margin-left:8px}
+.navlinks .contact:hover{color:#fff;background:#c91410}
+.hero{min-height:760px;display:flex;align-items:center;color:#fff;position:relative;overflow:hidden;background:
+linear-gradient(90deg,rgba(0,0,0,.86) 0%,rgba(0,0,0,.64) 43%,rgba(0,0,0,.22) 100%),
+url("comm-1.jpg") center/cover no-repeat}
+.hero-content{padding-top:120px;max-width:760px;margin-left:max(4%,calc((100% - 1180px)/2));margin-right:auto;text-align:left;align-self:center}
+.eyebrow{color:#ff5a55;font-weight:900;letter-spacing:2px}
+h1{font-size:clamp(46px,7vw,84px);line-height:.98;margin:18px 0;text-transform:uppercase}
+h1 span{color:var(--red)}
+.hero p{font-size:21px;max-width:680px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{padding:15px 23px;border-radius:7px;text-decoration:none;font-weight:900;border:2px solid transparent;display:inline-block}
+.btn.red{background:var(--red);color:#fff}
+.btn.outline{border-color:#fff;color:#fff}
+section{padding:82px 0}
+.section-title{text-align:center;margin-bottom:44px}
+.section-title small{color:var(--red);font-weight:900;letter-spacing:2px}
+.section-title h2{font-size:42px;margin:8px 0;text-transform:uppercase;line-height:1.1}
+.line{width:58px;height:4px;background:var(--red);margin:12px auto}
+.intro{display:grid;grid-template-columns:1.1fr .9fr;gap:45px;align-items:center}
+.intro img{width:100%;height:520px;object-fit:cover;border-radius:16px;box-shadow:0 18px 45px rgba(0,0,0,.14)}
+.intro h3{font-size:32px;margin-top:0}
+.checks{padding:0;list-style:none}
+.checks li{margin:12px 0;padding-left:28px;position:relative}
+.checks li:before{content:"✓";position:absolute;left:0;color:var(--red);font-weight:900}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 10px 28px rgba(0,0,0,.06)}
+.card img{width:100%;height:210px;object-fit:cover}
+.card-body{padding:24px}
+.card h3{margin:0 0 10px;font-size:24px}
+.card h3 span{color:var(--red)}
+.card p{color:#4e5661}
+.card .more{display:inline-block;margin-top:8px;background:var(--red);color:#fff;padding:10px 16px;border-radius:6px;text-decoration:none;font-weight:800}
+.pricing{background:var(--light)}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.price{background:#fff;border:1px solid var(--line);border-radius:14px;padding:28px;position:relative;overflow:hidden}
+.price:before{content:"";position:absolute;left:0;top:0;right:0;height:5px;background:var(--red)}
+.price h3{margin:0;font-size:23px}
+.amount{font-size:38px;font-weight:950;margin:14px 0 3px;color:var(--red)}
+.price p{color:#59616c}
+.note{margin-top:22px;padding:18px 20px;background:#fff;border-left:4px solid var(--red);border-radius:6px}
+.quote{background:linear-gradient(135deg,#0d1117,#171d26);color:#fff}
+.quote-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:start}
+.quote h2{font-size:40px;line-height:1.1;margin-top:0}
+.quote p{color:#cdd2d8}
+form{background:#fff;color:var(--ink);padding:28px;border-radius:14px;box-shadow:0 18px 45px rgba(0,0,0,.2)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.field{display:flex;flex-direction:column;gap:6px}
+.field.full{grid-column:1/-1}
+label{font-weight:800;font-size:14px}
+input,select,textarea{width:100%;padding:13px 14px;border:1px solid #d8dce1;border-radius:7px;font:inherit}
+textarea{min-height:130px;resize:vertical}
+.submit{border:0;background:var(--red);color:#fff;font-weight:900;padding:15px 20px;border-radius:7px;cursor:pointer;font-size:16px}
+.map-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:28px;align-items:stretch}
+.contact-box{background:var(--dark);color:#fff;border-radius:14px;padding:30px}
+.contact-box h3{font-size:28px;margin-top:0}
+.contact-box strong{color:#fff}
+.map{min-height:360px;border:0;border-radius:14px;width:100%;box-shadow:0 10px 28px rgba(0,0,0,.08)}
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:42px;align-items:center}
+.about img{width:100%;height:470px;object-fit:cover;border-radius:16px}
+footer{background:#08090b;color:#cdd1d6;padding:35px 0}
+.footer-grid{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer a{color:#fff}
+@media(max-width:850px){
+.nav{min-height:78px}.logo{width:72px;height:72px}.brand span{font-size:11px;white-space:normal;line-height:1.15;max-width:180px}.navlinks a{padding:28px 8px;font-size:12px}.navlinks .hide-mobile{display:none}
+.hero{min-height:690px}.intro,.quote-grid,.map-wrap,.about{grid-template-columns:1fr}
+.cards,.price-grid{grid-template-columns:1fr}
+.intro img,.about img{height:360px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}
+}
+@media(max-width:560px){
+.navlinks a{padding:25px 6px}.navlinks .contact{padding:11px 12px}.logo{width:62px;height:62px}.brand{gap:8px}.brand span{font-size:9px;max-width:135px}
+.hero-content{padding-top:90px}.hero p{font-size:18px}section{padding:60px 0}.section-title h2{font-size:32px}
+}
+</style>
+
+<style>
+.services-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.service-card{background:#fff;border:1px solid #ddd;border-radius:16px;overflow:hidden;box-shadow:0 12px 35px rgba(0,0,0,.09);display:flex;flex-direction:column}
+.service-image{height:260px;background-position:center;background-size:cover}
+.service-content{padding:28px}
+.service-tag{color:#e21b17;font-weight:900;letter-spacing:1.5px;font-size:12px}
+.service-content h3{font-size:24px;text-transform:uppercase;margin:7px 0 10px}
+.service-content p{color:#444}
+.service-content ul{list-style:none;padding:0;margin:18px 0}
+.service-content li{position:relative;padding-left:26px;margin:8px 0}
+.service-content li:before{content:"✓";position:absolute;left:0;color:#e21b17;font-weight:900}
+.service-price{font-size:30px;color:#e21b17;font-weight:900;margin:18px 0}
+.service-price small{font-size:16px;color:#555;font-weight:700}
+.service-link{display:inline-block;background:#e21b17;color:#fff;text-decoration:none;padding:12px 18px;border-radius:6px;font-weight:900}
+@media(max-width:850px){.services-grid{grid-template-columns:1fr}}
+</style>
+
+
+
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="index.html" class="brand"><img class="logo" src="logo-kcf.png" alt="Kevin Corse Formation"><span>KEVIN CORSE FORMATION • BOUCHES-DU-RHÔNE / PACA</span></a>
+    <nav class="navlinks" aria-label="Navigation principale">
+      <a href="index.html">ACCUEIL</a>
+      <a href="#prestations">PRESTATIONS</a>
+      <a href="#tarifs">TARIFS</a>
+      <a href="#apropos" class="hide-mobile">À PROPOS</a>
+      <a href="#devis" class="contact">CONTACT</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container hero-content">
+    <div class="eyebrow">KEVIN CORSE FORMATION • BOUCHES-DU-RHÔNE / PACA</div>
+    <h1>MIEUX SE FORMER<br><span>POUR MIEUX SAUVER</span></h1>
+    <p>Formation, prévention et sécurité pour les entreprises et établissements. Des prestations adaptées à votre activité, votre effectif et vos besoins.</p>
+    <div class="actions">
+      <a class="btn red" href="#prestations">DÉCOUVRIR LES FORMATIONS</a>
+      <a class="btn outline" href="#devis">DEMANDER UN DEVIS</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container intro">
+    <img src="formation-concrete.jpg" alt="Kevin Corse en intervention de formation">
+    <div>
+      <div class="eyebrow">UNE FORMATION CONCRÈTE</div>
+      <h3>Des formations adaptées à votre établissement</h3>
+      <p>Des interventions pensées pour votre activité, vos locaux, votre effectif et vos risques. L'objectif : transmettre des gestes utiles, améliorer l'organisation et développer une véritable culture de prévention.</p>
+      <ul class="checks">
+        <li>Approche terrain et accompagnement personnalisé</li>
+        <li>Théorie, pratique, mises en situation et QCM selon la formation</li>
+        <li>Attestation de formation remise aux participants</li>
+        <li>Interventions dans les Bouches-du-Rhône et la région PACA</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="prestations">
+  <div class="container">
+    <div class="section-title"><small>NOS DOMAINES</small><h2>Les prestations</h2><div class="line"></div></div>
+    <div class="cards">
+      <article class="card"><img src="fire-2.jpg" alt="Formation incendie"><div class="card-body"><h3><span>Incendie</span></h3><a class="more" href="incendie.html">Voir le programme</a></div></article>
+      <article class="card"><img src="evac-1.webp" alt="Formation évacuation"><div class="card-body"><h3><span>Évacuation</span></h3><a class="more" href="evacuation.html">Voir le programme</a></div></article>
+      <article class="card"><img src="duerp-1.jpeg" alt="DUERP et prévention"><div class="card-body"><h3><span>DUERP</span></h3><a class="more" href="duerp.html">Voir le programme</a></div></article>
+      <article class="card"><img src="comm-2.jpg" alt="Commission de sécurité"><div class="card-body"><h3><span>Commission de sécurité</span></h3><a class="more" href="commission-securite.html">Voir le programme</a></div></article>
+      <article class="card"><img src="sst-1.jpg" alt="Formation SST"><div class="card-body"><h3><span>SST</span></h3><a class="more" href="sst.html">Voir le programme</a></div></article>
+      <article class="card"><img src="sst-2.jpg" alt="Formation EPI + AMD"><div class="card-body"><h3><span>EPI + AMD</span></h3><a class="more" href="epi-amd.html">Voir le programme</a></div></article>
+      <article class="card"><img src="amd-dae.png" alt="Secourisme avec AMD - alerter, masser, défibriller"><div class="card-body"><h3><span>Secourisme avec AMD</span></h3><a class="more" href="secourisme-amd.html">Voir le programme</a></div></article>
+      <article class="card"><img src="etablissement-ssi.png" alt="Formation incendie et SSI en établissement de soin"><div class="card-body"><h3><span>Établissements de soin</span></h3><a class="more" href="etablissement-soin.html">Voir le programme</a></div></article>
+    </div>
+  
+
+
+
+
+</div>
+</section>
+
+<section id="tarifs" class="pricing">
+  <div class="container">
+    <div class="section-title"><small>TARIFICATION</small><h2>Des tarifs clairs</h2><div class="line"></div></div>
+    <div class="price-grid">
+      <article class="price"><h3>SST initial</h3><div class="amount">1 20€/personnes</div><p><strong>14 h • 2 jours</strong></p><p>Minimum 4 personnes • Maximum 10 personnes.</p></article>
+      <article class="price"><h3>MAC SST</h3><div class="amount">650 €</div><p><strong>7 h • 1 journée</strong></p><p>Recyclage SST. Minimum 4 personnes • Maximum 10 personnes.</p></article>
+      <article class="price"><h3>EPI + AMD</h3><div class="amount">650 €</div><p><strong>1 journée</strong></p><p>10 à 12 participants maximum. Formation pratique et théorique adaptée à l'entreprise.</p></article>
+      <article class="price"><h3>Secourisme avec AMD</h3><div class="amount">20 € / personne</div><p><strong>2 h</strong></p><p>Formation alerter, masser, défibriller. Tarif par personne.</p></article>
+      <article class="price"><h3>Établissements de soin</h3><div class="amount">400 €</div><p><strong>Demi-journée</strong></p><p>Formation incendie + SSI adaptée aux EHPAD, cliniques, hôpitaux et structures d'hébergement.</p></article>
+    </div>
+    <div class="note"><strong>DUERP, PAPRIPACT, commission de sécurité, évacuation et autres prestations :</strong> tarif établi sur devis selon la demande de l'entreprise, son effectif, ses locaux et ses besoins.</div>
+  </div>
+</section>
+
+<section id="apropos">
+  <div class="container about">
+    <img src="photo-kevin.jpg" alt="Kevin Corse en intervention de formation">
+    <div>
+      <div class="eyebrow">À PROPOS DE L'ORGANISME</div>
+      <h2>Une expérience de terrain au service de la prévention</h2>
+      <p><strong>15 ans d'expérience dans la gestion de crise</strong> et <strong>10 ans dans l'accompagnement des entreprises</strong> m'ont permis de développer une approche concrète, basée sur la réalité du terrain.</p>
+      <p>Mon expérience de <strong>préventeur dans le secteur médico-social</strong> m'a permis d'accroître mes accompagnements auprès de structures très différentes et de m'adapter aux besoins de chaque direction.</p>
+      <p>Mon point fort est d'intervenir directement dans les entreprises pour faire avant tout de la <strong>prévention incendie et du secourisme</strong>, mais aussi d'accompagner les directions afin qu'elles connaissent leurs devoirs en matière de <strong>santé et sécurité au travail</strong>.</p>
+      <p>J'ai animé plusieurs <strong>commissions de sécurité</strong> et je peux donc également accompagner les entreprises dans la préparation de leur future commission de sécurité.</p>
+      <p><strong>Zone d'intervention :</strong> Bouches-du-Rhône / région PACA.</p>
+      <a class="btn red" href="https://www.linkedin.com/in/k%C3%A9vin-corse-4644b9173/" target="_blank" rel="noopener">LINKEDIN</a>
+    </div>
+  </div>
+</section>
+
+<section id="devis" class="quote">
+  <div class="container quote-grid">
+    <div>
+      <div class="eyebrow">DEVIS EN LIGNE</div>
+      <h2>Demandez votre devis directement en ligne</h2>
+      <p>Décrivez votre besoin, votre établissement et votre effectif. La demande est transmise pour traitement et retour personnalisé.</p>
+      <p><strong>Réponse :</strong> corse.kevin@outlook.fr</p>
+      <p>Vous pouvez demander un devis pour une formation incendie, évacuation, SST, DUERP, commission de sécurité, EPI + AMD ou une prestation sur mesure.</p>
+    </div>
+
+    <!--
+      IMPORTANT :
+      GitHub Pages ne peut pas envoyer un formulaire tout seul.
+      Pour un envoi automatique par e-mail, créez un formulaire gratuit sur Formspree,
+      puis remplacez l'action ci-dessous par votre URL Formspree.
+      Exemple : https://formspree.io/f/XXXXXXXX
+    -->
+    <form action="https://formspree.io/f/REMPLACER_PAR_VOTRE_ID" method="POST">
+      <input type="hidden" name="_subject" value="Nouvelle demande de devis - Kevin Corse Formation">
+      <div class="form-grid">
+        <div class="field"><label for="nom">Nom / entreprise *</label><input id="nom" name="nom_entreprise" required></div>
+        <div class="field"><label for="email">E-mail *</label><input id="email" type="email" name="email" required></div>
+        <div class="field"><label for="tel">Téléphone</label><input id="tel" name="telephone"></div>
+        <div class="field"><label for="effectif">Effectif à former</label><input id="effectif" name="effectif" type="number" min="1"></div>
+        <div class="field full"><label for="prestation">Prestation souhaitée *</label>
+          <select id="prestation" name="prestation" required>
+            <option value="">Sélectionnez une prestation</option>
+            <option>Formation incendie</option>
+            <option>Évacuation</option>
+            <option>SST initial – 14 h</option>
+            <option>MAC SST – 7 h</option>
+            <option>EPI + AMD</option>
+            <option>DUERP / PAPRIPACT</option>
+            <option>Commission de sécurité</option>
+            <option>Autre / sur mesure</option>
+          </select>
+        </div>
+        <div class="field"><label for="etablissement">Type d'établissement</label><input id="etablissement" name="type_etablissement" placeholder="EHPAD, PME, hôtel, etc."></div>
+        <div class="field"><label for="ville">Ville / lieu</label><input id="ville" name="ville_lieu"></div>
+        <div class="field full"><label for="message">Votre besoin *</label><textarea id="message" name="message" required placeholder="Décrivez votre demande, vos contraintes ou vos disponibilités..."></textarea></div>
+        <div class="field full"><button class="submit" type="submit">ENVOYER MA DEMANDE DE DEVIS</button></div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section id="lieu">
+  <div class="container">
+    <div class="section-title"><small>SECTEUR D'INTERVENTION</small><h2>Lieu & zone d'intervention</h2><div class="line"></div></div>
+    <div class="map-wrap">
+      <div class="contact-box">
+        <h3>Bouches-du-Rhône / PACA</h3>
+        <p>Les formations peuvent être organisées directement dans votre établissement, selon les conditions et besoins de la prestation.</p>
+        <p><strong>Téléphone :</strong> 06 10 23 20 98</p>
+        <p><strong>E-mail :</strong> <a href="mailto:corse.kevin@outlook.fr">corse.kevin@outlook.fr</a></p>
+        <a class="btn red" href="#devis">Demander un devis</a>
+      </div>
+      <iframe class="map" title="Carte Bouches-du-Rhône et PACA" src="https://www.google.com/maps?q=Bouches-du-Rh%C3%B4ne%2C%20France&output=embed" loading="lazy" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div><strong>KEVIN CORSE FORMATION</strong><br>Formation • Prévention • Sécurité</div>
+    <div>06 10 23 20 98 • <a href="mailto:corse.kevin@outlook.fr">corse.kevin@outlook.fr</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
